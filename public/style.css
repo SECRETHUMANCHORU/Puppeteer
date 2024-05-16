@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-image: url('https://raw.githubusercontent.com/ChoruTiktokers182/Api-image/main/1715232963963.jpg');
+    background-size: cover;
+}
+
+h1, .section-title {
+    font-weight: bold;
+    text-align: center;
+    color: #000000; /* Primary color */
+}
+
+
+.api-tile {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-basis: calc(33% - 1rem);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1rem;
+}
+
+.api-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.api-tile img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .api-tile {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+@media (max-width: 480px) {
+    .api-tile {
+        flex-basis: 100%;
+    }
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #3366ff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s;
+}
+
+.visit-button:hover {
+    background-color: #0056b3; 
+}

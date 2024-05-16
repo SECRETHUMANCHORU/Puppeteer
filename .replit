@@ -1,0 +1,11 @@
+language = "bash"
+run = "bash main.sh"
+
+[deployment]
+deploymentTarget = "cloudrun"
+run = ["sh", "-c", "bash main.sh"]
+build = ["sh", "-c", "npm i puppeteer-core@15.3.0"]
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
